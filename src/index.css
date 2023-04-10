@@ -4,47 +4,133 @@ nav ul {
     padding: 0;
     text-align: center;
   }
+
   
-nav li {
+  nav li {
     display: inline-block;
-    margin-right: 1.5em;
-}
+    /* margin-right: 1.5em; */
+    position: relative;
+    font-size: large;
+  }
   
-nav li:last-child {
-    margin-right: 0;
-}
-  
-nav a {
+  nav a {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
     color: #333;
     font-weight: bold;
-}
+  }
   
-nav a:hover {
+  nav a:hover,
+  nav li.active > a {
     color: #fff;
     background-color: #333;
-}
+  }
+  
+  nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s ease-out;
+  }
+
+  nav li:hover > ul,
+  nav li.active > ul {
+    height: auto;
+  }
+  
+  nav ul ul li {
+    margin: 0;
+    padding: 0.5em 0em;
+  }
+  
+  nav ul ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
     /* background-color: ; */
 }
   
-.contact, .home, .about, .projects {
+.contact, .home, .about, .projects, .project-page {
     margin-top: 1em;
     text-align: center;
 }
 
-.contact {
+.contact, .home {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
 }  
 
-.contact ul {
+/* .home h2{
+  transition: transform 0.2s ease-in-out;
+} */
+
+.home h2 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#linkedin {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#profile {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+#github {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+
+
+.home h2:hover {
+  transform: scale(1.1);
+}
+
+
+.contact ul, .home ul {
     padding-left: 0;
+}
+
+.home li{
+  display: grid;
+  text-align: center;
+  margin: 5em;
+  list-style: none;
+}
+
+.contact li{
+  display: grid;
+  text-align: center;
+  width: 20em;
+  margin: 0 auto;
+  list-style: none;
 }
 
 .contact a {
@@ -63,10 +149,8 @@ body {
     text-decoration: none;
   }
 
-.contact li{
-    display: grid;
-    text-align: center;
-    width: 20em;
-    margin: 0 auto;
-    list-style: none;
+.about h4 {
+  text-align: center;
+  margin-left: 5em;
+  margin-right: 5em;
 }
