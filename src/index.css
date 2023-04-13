@@ -17,24 +17,26 @@ nav ul {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: bold;
   }
   
   nav a:hover,
   nav li.active > a {
-    color: #fff;
-    background-color: #333;
+    color: black;
+    background-color: #FFFFFE;
   }
   
   nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    color: black;
+    background-color: #FFFFFE;
     height: 0;
     overflow: hidden;
     transition: height 1s ease-out;
+    z-index: 1;
   }
 
   nav li:hover > ul,
@@ -48,12 +50,14 @@ nav ul {
   }
   
   nav ul ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
   }
 
 
 body {
+  color: white;
+  background-color: #CF9FFF;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   margin-bottom: 3em;
@@ -72,15 +76,18 @@ body {
     height: 80vh;
 }  
 
+.contact ul li a{
+  color: black;
+}
+
 /* .home h2{
   transition: transform 0.2s ease-in-out;
 } */
 
-.home h2 {
+.home h1 {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
-
 
 @keyframes fadeIn {
   from {
@@ -107,13 +114,6 @@ body {
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
 }
-
-
-
-.home h2:hover {
-  transform: scale(1.1);
-}
-
 
 .contact ul, .home ul {
     padding-left: 0;
@@ -150,32 +150,24 @@ body {
     text-decoration: none;
   }
 
-.about h4 {
-  text-align: center;
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
-
-/* .p-1, .p-2, .p-3 {
-  display: none;
-} */
-
-/* .section-hidden{
-  display: none;
-} */
-
 p {
   font-size: large;
   line-height: 1.5;
   text-indent: 3em;
   text-align: justify;
-  margin-left: 5em;
-  margin-right: 5em;
 }
 
 .about-p {
   text-align: justify;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+@media (max-width: 768px) {
+  .about-p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 .about {
@@ -188,7 +180,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2em;
 }
 
 .flex-row {
@@ -229,3 +220,109 @@ p {
   height: 300px;
 }
 
+/* PROJECTS */
+
+.projects {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row-p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2em;
+  margin-right: 5em;
+  margin-left: 1em;
+}
+
+.flex-row-reverse-p {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 1em;
+}
+
+.flex-row-p h2, .flex-row-reverse-p h2 {
+  text-align: center;
+}
+
+.flex-row-p img {
+  margin-right: 1em;
+  margin-left: 5em;
+  width: 300px;
+  height: 300px;
+}
+
+.flex-row-reverse-p img {
+  margin-left: 1em;
+  margin-right: 5em;
+  width: 300px;
+  height: 300px;
+}
+
+#linkedin {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#profile {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+#github {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+#projects-header {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#project-1 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+#project-2 {
+  opacity: 0;
+  animation: fadeIn 4s ease-in-out forwards;
+}
+
+#project-3 {
+  opacity: 0;
+  animation: fadeIn 6s ease-in-out forwards;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background-color: #FFFFFE;
+}
+
+button a{
+  text-decoration: none;
+  color: black;
+}

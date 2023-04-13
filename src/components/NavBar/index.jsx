@@ -25,7 +25,7 @@ const NavBar = () => {
                       {showLinks && (
                         <ul className='dropdown'>
                           <li>
-                            <NavLink to='/projects/1'>Florin County Website</NavLink>
+                            <NavLink to='/projects/1'>Florin Events</NavLink>
                           </li>
                           <li>
                             <NavLink to='/projects/2'>Flipping Flashcards</NavLink>
