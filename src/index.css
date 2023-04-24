@@ -264,6 +264,10 @@ p {
   margin-top: 1em;
 }
 
+.button-container button{
+  font-weight: bold;
+}
+
 button {
   display: inline-block;
   padding: 0.5em 1em;
@@ -333,7 +337,7 @@ button {
     font-size: medium;
   }
 
-  #projects h2{
+  #header-projects{
     display: none;
   }
 
@@ -365,6 +369,7 @@ button {
   .button-container button {
     margin-top: 0em;
     font-size: 85%;
+    font-weight: bold;
   }
   
   .home {
@@ -391,5 +396,23 @@ button {
 
   #contact span {
     font-size: medium;
+  }
+}
+
+@media (max-width: 1200px){
+  #projects p{
+    font-size: medium;
+  }
+  #projects h2 {
+    font-size: large;
+  }
+}
+
+@media (max-width: 820px){
+  #projects p{
+    font-size: 90%;
+  }
+  #projects h2 {
+    font-size: large;
   }
 }

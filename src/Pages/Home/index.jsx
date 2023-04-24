@@ -48,7 +48,7 @@ const Home = () => {
         <span id='projects-to-about' onClick={() => scrollToSection('about')}>
           <FaArrowUp /> About Me
         </span>
-        <h2>Let me walk you through my latest projects:</h2>
+        <h2 id='header-projects'>Let me walk you through my latest projects:</h2>
         <div className='projects-main'>
           <div className='flex-row-p' id='project-1'>
             <img src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1681987403/Florin-1_h0ef8h.png' alt='image1' />
