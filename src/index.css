@@ -303,6 +303,13 @@ button {
 .nav-links{
   display: flex;
   flex-direction: row;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#home-to-about {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .nav-links span {
