@@ -62,7 +62,7 @@ const Home = () => {
             </div>
           </div>
           <div className='flex-row-reverse-p' id='project-2'>
-            <img src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1681986200/Flipping-2_stdkkm.png' alt='image2' />
+            <img src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682340147/Flipping-2_xu7xja.png' alt='image2' />
             <div>
               <h2>Flipping Flashcards</h2>
               <p>Introducing Flipping Flashcards, an innovative and cutting-edge study tool that revolutionizes the traditional approach to revision. With its dynamic flip action, Flipping Flashcards provides a unique and engaging way to enhance your learning experience.</p>
