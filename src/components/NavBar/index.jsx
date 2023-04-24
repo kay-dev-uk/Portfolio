@@ -4,13 +4,24 @@ import { NavLink, Outlet } from 'react-router-dom'
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
+
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    setShowLinks(false);
+    setActiveLink(false);
+  };
+
   return (
     <>
         <header>
             <nav>
                 <ul>
-                    <li><NavLink to='/'>Home</NavLink></li>
-                    <li><NavLink to='/about'>About Me</NavLink></li>
+                    <li><span onClick={() => scrollToSection('home')}>
+                        Home
+                      </span></li>
+                    <li><span onClick={() => scrollToSection('about')}>
+                        About Me
+                      </span></li>
                     <li onMouseEnter={() => {
                         setShowLinks(true);
                         setActiveLink(true);
@@ -21,10 +32,12 @@ const NavBar = () => {
                       }}
                       className={activeLink ? "active" : ""}
                     >
-                      <NavLink to='/projects'>My Projects</NavLink>
+                      <span onClick={() => scrollToSection('projects')}>
+                        My Projects
+                      </span>
                       {showLinks && (
                         <ul className='dropdown'>
-                          <li>
+                          {/* <li>
                             <NavLink to='/projects/1'>Florin Events</NavLink>
                           </li>
                           <li>
@@ -32,11 +45,15 @@ const NavBar = () => {
                           </li>
                           <li>
                             <NavLink to='/projects/3'>Kanban AI</NavLink>
-                          </li>
+                          </li> */}
                         </ul>
                       )}
                     </li>
-                    <li><NavLink to='/contacts'>Contact Me</NavLink></li>
+                    <li>
+                      <span onClick={() => scrollToSection('contact')}>
+                        Contact Me
+                      </span>
+                    </li>
                 </ul>
             </nav>
         </header>
