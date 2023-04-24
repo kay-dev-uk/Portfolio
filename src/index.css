@@ -334,7 +334,7 @@ button {
   }
 
   #projects h2{
-    font-size: 80%;
+    display: none;
   }
 
   .flex-row-reverse-p{
