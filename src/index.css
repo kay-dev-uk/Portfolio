@@ -322,6 +322,8 @@ button {
 
   #projects {
     margin: 1em;
+    min-height: 100vh;
+    max-height: 100vh;
   }
 
   #projects p{
@@ -379,7 +381,7 @@ button {
     flex-direction: column;
   }
   .nav-links span {
-    font-size: small;
+    font-size: medium;
     margin: 0.5em;
   }
 
