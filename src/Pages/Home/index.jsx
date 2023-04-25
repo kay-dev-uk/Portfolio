@@ -82,7 +82,7 @@ const Home = () => {
               Contact Me
         </span>
       </div>
-      <span className='hidden-right' id='home-to-about' onClick={() => scrollToSection('about')}>
+      <span id='home-to-about' onClick={() => scrollToSection('about')}>
         <FaArrowDown /> About
       </span>
     </div>
