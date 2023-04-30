@@ -7,23 +7,6 @@ const Home = () => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   };
 
-    // useEffect(() => {
-    //   const observer = new IntersectionObserver((entries) => {
-    //     entries.forEach((entry) => {
-    //       console.log(entry)
-    //       if (entry.isIntersecting) {
-    //         entry.target.classList.add('show');
-    //       } else{
-    //         entry.target.classList.remove('show')
-    //       }
-    //     })
-    //   });
-  
-    //   const hiddenElements = document.querySelectorAll('.hidden, .hidden-right');
-    //   hiddenElements.forEach((el) => observer.observe(el));
-  
-    //   return () => observer.disconnect();
-    // }, []);
     useEffect(() => {
       const observer1 = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -57,8 +40,6 @@ const Home = () => {
       };
     }, []);
     
-
-
   return (
   <> 
     <div className='home' id='home'>
@@ -163,8 +144,8 @@ const Home = () => {
             </div>
           </div>    
         </div>
-      </div> 
-      <div id='row-2'>
+      {/* </div>  */}
+      {/* <div id='row-2'> */}
         <div id='virtualization'>
           <h3>Virtualization</h3>
           <div className='container'>
@@ -284,7 +265,7 @@ const Home = () => {
           <a href="https://github.com/kay-dev-uk" target="_blank">My GitHub<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682369316/Group_8_akx0an.png'/></a>
         </li>
         <li className='hidden' id='cv'>
-          <a href="src/assets/cv.pdf" target="_blank">My CV<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682369316/Group_8_akx0an.png'/></a>
+          <a href="src/assets/cv.pdf" target="_blank">My CV<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682865015/Group_10_cemcdl.png'/></a>
         </li>
       </ul>
       <span className='hidden-right' id='contact-to-home' onClick={() => scrollToSection('home')}>

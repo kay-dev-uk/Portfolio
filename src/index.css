@@ -104,19 +104,19 @@ body {
 #projects-span{
   position: absolute;
   top:5vh;
-  right:5vw;
+  right:15vw;
 }
 
 #about-span{
   position: absolute;
   top:5vh;
-  right:15vw;
+  right:25vw;
 }
 
 #contact-span{
   position: absolute;
   top:5vh;
-  right:25vw;
+  right:5vw;
 }
 
 .tech {
@@ -135,6 +135,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 
 }
 
@@ -148,16 +149,15 @@ body {
   box-sizing: border-box;
   flex-direction: column;
   display: flex;
-  /* align-items: center; */
-  align-items: end;
+  align-items: center;
   /* background: linear-gradient(to left, #a34bfd 50%, lightblue 50%) right;
   background-size: 200%;
   transition: .5s ease-out; */
 }
 
-/* #languages:hover, #databases:hover, #front-end:hover, #back-end:hover, #virtualization:hover, #version:hover, #testing:hover {
-  background-position: left;
-} */
+#languages:hover, #databases:hover, #front-end:hover, #back-end:hover, #virtualization:hover, #version:hover, #testing:hover {
+  border-color: #ffe897;
+}
 
 .container {
   display: flex;
@@ -292,11 +292,14 @@ body {
 }
 
 .contact a:hover {
-  color: #a34bfd;
+  color: black;
   cursor: pointer;
   outline: 1px solid #ffe897;
   outline-offset: 2px;
   border-radius: 5px;
+  background: linear-gradient(to left,#ffe897 50%, #a34bfd 50% ) right;
+  background-size: 200%;
+  transition: 1s ease-in-out;
 }
 
 .contact a:visited {
@@ -333,6 +336,7 @@ span:hover {
   border-radius: 5px;
   animation-fill-mode: forwards;
   transition: color 0.2s ease-in-out;
+  
 }
 
 p {
@@ -648,7 +652,8 @@ button {
 
   #linkedin,
   #profile,
-  #github {
+  #github,
+  #cv {
     font-size: medium;
   }
 
