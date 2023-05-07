@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-import { FaArrowUp, FaArrowDown, FaHome } from 'react-icons/fa';
-import style from '../../index.css'
+import { FaHome } from 'react-icons/fa';
 
 const Home = () => {
   const scrollToSection = (id) => {
@@ -52,19 +51,21 @@ const Home = () => {
           </h1>
         </li>
       </ul>
-      <img id='pic' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682627268/Subject_3_asrqj0.png'/>
-        <span id='about-span' className='hidden' onClick={() => scrollToSection("about")}>
+      <img className='hidden-right' id='pic' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682627268/Subject_3_asrqj0.png'/>
+    </div>
+    <div id='home-spans'>
+        <span id='about-span' className='hidden-right' onClick={() => scrollToSection("about")}>
               About Me
         </span>
-        <span id='projects-span' className='hidden' onClick={() => scrollToSection("projects")}>
+        <span id='tech-span' className='hidden-right' onClick={() => scrollToSection("tech")}>
+              My Stack
+        </span>
+        <span id='projects-span' className='hidden-right' onClick={() => scrollToSection("projects")}>
               My Projects
         </span>
-        <span id='contact-span' className='hidden' onClick={() => scrollToSection("contact")}>
+        <span id='contact-span' className='hidden-right' onClick={() => scrollToSection("contact")}>
               Contact Me
         </span>
-      {/* <span id='home-to-about' onClick={() => scrollToSection('about')}>
-        <FaArrowDown /> About
-      </span> */}
     </div>
     <div className='about' id='about'>
       <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682628184/Group_5_1_eq3qr6.png' alt='logo' />
@@ -76,121 +77,115 @@ const Home = () => {
         <h1>About Me</h1>
         <p className='about-p'>Hello and welcome to my About page! I'm a brand-new developer who's just starting out on this exciting journey. I'm constantly pushing myself to grow and expand my knowledge, whether it's through online courses, coding challenges, or collaborating with other developers and I just finished my coding bootcamp with La Fosse. I'm excited to be a part of this vibrant community and can't wait to see where this journey takes me!</p>
       </div>
-      
-      {/* <span className='hidden-right' id='about-to-projects' onClick={() => scrollToSection('projects')}>
-        <FaArrowDown /> My Projects
-      </span> */}
+
 
     </div>
     <div className='tech' id='tech'>
-      <h1>Technologies I use</h1>
+      <h1 className='hidden'>Technologies I use</h1>
       <div id='row-1'>
-        <div id='languages'>
+        <div id='languages' className='hidden'>
           <h3>Languages</h3>
           <div className='container'>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/javascript.svg' title='JavaScript'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452210/javascript_pp0zjv.svg' title='JavaScript'></img>
               JavaScript
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/python.svg' title='Python'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452197/python_evu9so.svg' title='Python'></img>
               Python
             </div>
           </div>     
         </div>
-        <div id='front-end'>
+        <div id='front-end' className='hidden'>
           <h3>Front End</h3>
           <div className='container'>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/react.svg' title='React'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452182/react_hwybaa.svg' title='React'></img>
               React
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/html-5.svg' title='HTML5'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452115/html-5_zhw0y5.svg' title='HTML5'></img>
               HTML5
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/css-3.svg' title='CSS3'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452099/css-3_fi9cle.svg' title='CSS3'></img>
               CSS3
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/tailwindcss-icon.svg' title='Tailwind'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452084/tailwindcss-icon_vryuon.svg' title='Tailwind'></img>
               Tailwind
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/bootstrap.svg' title='Bootstrap'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452067/bootstrap_vonqqf.svg' title='Bootstrap'></img>
               Bootstrap
             </div>
           </div>      
         </div>
-        <div id='back-end'>
+        <div id='back-end' className='hidden-right'>
           <h3>Back end</h3>
           <div className='container'>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/flask.svg' title='Flask'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452051/flask_ie5jb2.svg' title='Flask'></img>
               Flask
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/django-icon.svg' title='Django'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452032/django-icon_uk4wsp.svg' title='Django'></img>
               Django
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/nodejs-icon.svg' title='NodeJS'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683452012/nodejs-icon_yqz6fc.svg' title='NodeJS'></img>
               NodeJS       
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/express.svg' title='Express'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683451852/express_kly0nt.svg' title='Express'></img>
               Express 
             </div>
           </div>    
         </div>
-      {/* </div>  */}
-      {/* <div id='row-2'> */}
-        <div id='virtualization'>
+        <div id='virtualization' className='hidden'>
           <h3>Virtualization</h3>
           <div className='container'>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/docker-icon.svg' title='Docker'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683451888/docker-icon_rt9pnh.svg' title='Docker'></img>
               Docker
             </div>
           </div>
         </div>
-        <div id='databases'>
+        <div id='databases' className='hidden'>
           <h3>Databases</h3>
           <div className='container'>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/mongodb-icon.svg' title='MongoDB'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683451907/mongodb-icon_cmsasc.svg' title='MongoDB'></img>
               MongoDB
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/postgresql.svg' title='PostreSQL'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683451924/postgresql_qckumv.svg' title='PostreSQL'></img>
               PostgreSQL
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/sqlite.svg' title='SQLite'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683451940/sqlite_om5rbl.svg' title='SQLite'></img>
               SQLite
-            </div>
-            
+            </div>     
           </div>    
         </div>
-        <div id='version'>
+        <div id='version' className='hidden-right'>
           <h3>Version Control</h3>
           <div className='container'>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/git-icon.svg' title='Git'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683451957/git-icon_vknstp.svg' title='Git'></img>
               Git
             </div>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/github-icon.svg' title='Github'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683451973/github-icon_puneos.svg' title='Github'></img>
               Github
             </div>
           </div>
         </div>
-        <div id='testing'>
+        <div id='testing' className='hidden-right'>
           <h3>Testing</h3>
           <div className='container'>
             <div className='child-div'>
-              <img className='tech-logo' src='https://cdn.svgporn.com/logos/jest.svg' title='Jest'></img>
+              <img className='tech-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1683451991/jest_udx4sn.svg' title='Jest'></img>
               Jest
             </div>
             <div className='child-div'>
@@ -200,15 +195,8 @@ const Home = () => {
           </div>    
         </div>
       </div>
-      
-      {/* <div id='tech-i-use'>
-      </div> */}
     </div>
       <div className="projects" id='projects'>
-        {/* <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682352608/Group_5_dug4m9.png' alt='logo' /> */}
-        {/* <span className='hidden-right' id='projects-to-about' onClick={() => scrollToSection('about')}>
-          <FaArrowUp /> About Me
-        </span> */}
         <h2 id='header-projects' className='hidden-right'>Let me walk you through my latest projects:</h2>
         <div className='projects-main'>
           <div className='flex-row-p' id='project-3'>
