@@ -69,16 +69,10 @@ const Home = () => {
     </div>
     <div className='about' id='about'>
       <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682628184/Group_5_1_eq3qr6.png' alt='logo' />
-      {/* <span className='hidden-right' id='about-to-home' onClick={() => scrollToSection('home')}>
-        <FaArrowUp /> Back to Home
-      </span> */}
       <div className='hidden'>
-        {/* <img id='pic' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682627104/Subject_2_tjpu6i.png'/> */}
         <h1>About Me</h1>
         <p className='about-p'>Hello and welcome to my About page! I'm a brand-new developer who's just starting out on this exciting journey. I'm constantly pushing myself to grow and expand my knowledge, whether it's through online courses, coding challenges, or collaborating with other developers and I just finished my coding bootcamp with La Fosse. I'm excited to be a part of this vibrant community and can't wait to see where this journey takes me!</p>
       </div>
-
-
     </div>
     <div className='tech' id='tech'>
       <h1 className='hidden'>Technologies I use</h1>
@@ -232,15 +226,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <span id='projects-to-contacts' className='hidden-right' onClick={() => scrollToSection('contact')}>
-          <FaArrowDown /> Contact Me
-        </span> */}
       </div>
     <div className='contact' id='contact'>
       <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682628184/Group_5_1_eq3qr6.png' alt='logo' />
-      {/* <span id='contact-to-projects' className='hidden-right' onClick={() => scrollToSection('projects')}>
-        <FaArrowUp /> My Projects
-      </span> */}
       <ul>
         <li className='hidden-right' id='linkedin'>
           <a href="https://www.linkedin.com/in/kyrylo-rybalko-03a62b178/" target="_blank">My LinkedIn<img id='linkedin-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682354432/Group_6_1_fitciw.png'/></a>

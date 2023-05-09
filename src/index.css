@@ -333,7 +333,6 @@ p {
   margin-right: 15vw;
 }
 
-
 #pic {
   opacity: 0.8;
   width: 30%;
@@ -686,4 +685,8 @@ button {
   filter: blur(5px);
   transform: translateX(100%);
   transition: transform 1.5s, bounce 1s, color 0.2s;
+}
+
+body, html {
+  overflow-x: hidden;
 }
