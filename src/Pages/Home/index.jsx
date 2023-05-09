@@ -253,7 +253,7 @@ const Home = () => {
           <a href="https://github.com/kay-dev-uk" target="_blank">My GitHub<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682369316/Group_8_akx0an.png'/></a>
         </li>
         <li className='hidden' id='cv'>
-          <a href="src/assets/cv.pdf" target="_blank">My CV<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682865015/Group_10_cemcdl.png'/></a>
+          <a href="https://gray-jewelle-23.tiiny.site/" target="_blank">My CV<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682865015/Group_10_cemcdl.png'/></a>
         </li>
       </ul>
       <span className='hidden-right' id='contact-to-home' onClick={() => scrollToSection('home')}>
