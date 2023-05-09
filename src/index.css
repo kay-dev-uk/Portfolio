@@ -45,6 +45,7 @@ body {
   /* background: linear-gradient(to top, #ffe897, black) bottom; */
   background-color: #000000;
   color: #ffe897;
+  border: 1em solid #ffe897;
 }
 
 .projects {
@@ -59,9 +60,6 @@ body {
 .projects .button-container a button:hover{
   color: black;
   cursor: pointer;
-  /* outline: 1px solid #ffe897; */
-  /* outline-offset: 2px; */
-  /* border-radius: 5px; */
   background: linear-gradient(to left,#ffe897 50%, #a34bfd 50% ) right;
   background-size: 200%;
   transition: 1s ease-in-out;
@@ -73,6 +71,7 @@ body {
 .projects {
   text-align: center;
 }
+
 
 #home-to-about,
 #about-to-projects,
@@ -88,7 +87,8 @@ body {
 }
 
 .contact,
-.about {
+.about,
+#about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,8 +329,8 @@ p {
 .about-p {
   font-size:x-large;
   text-align: justify;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 #pic {

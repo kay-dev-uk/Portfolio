@@ -67,12 +67,19 @@ const Home = () => {
               Contact Me
         </span>
     </div>
-    <div className='about' id='about'>
-      <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682628184/Group_5_1_eq3qr6.png' alt='logo' />
-      <div className='hidden'>
-        <h1>About Me</h1>
-        <p className='about-p'>Hello and welcome to my About page! I'm a brand-new developer who's just starting out on this exciting journey. I'm constantly pushing myself to grow and expand my knowledge, whether it's through online courses, coding challenges, or collaborating with other developers and I just finished my coding bootcamp with La Fosse. I'm excited to be a part of this vibrant community and can't wait to see where this journey takes me!</p>
+    <div className='about' >
+      <div id='about'>
+        <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682628184/Group_5_1_eq3qr6.png' alt='logo' />
+        <div className='hidden'>
+          <h1>About Me</h1>
+          <p className='about-p'>Hello and welcome to my About page! I'm a brand-new developer who's just starting out on this exciting journey. I'm constantly pushing myself to grow and expand my knowledge, whether it's through online courses, coding challenges, or collaborating with other developers and I just finished my coding bootcamp with La Fosse. I'm excited to be a part of this vibrant community and can't wait to see where this journey takes me!</p>
+        </div>
+
       </div>
+      <div>
+
+      </div>
+      
     </div>
     <div className='tech' id='tech'>
       <h1 className='hidden'>Technologies I use</h1>
