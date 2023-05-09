@@ -338,18 +338,10 @@ p {
   opacity: 0.8;
   width: 30%;
   border-radius: 10vh;
-  border: solid 2px #ffe897;
-
-  /* float: right;
-  position: absolute;
-  right: 10%;
-  top: 30%;
-  z-index: 1;
-  border-radius: 50%; */
 }
 
 #pic:hover{
-  border: solid 2px greenyellow;
+  border: solid 2px #ffe897;
 }
 
 .about {
