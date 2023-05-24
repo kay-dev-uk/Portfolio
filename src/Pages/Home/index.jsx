@@ -42,7 +42,7 @@ const Home = () => {
   return (
   <> 
     <div className='home' id='home'>
-      <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682628184/Group_5_1_eq3qr6.png' alt='logo' />
+      {/* <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1684964234/LogotWR_oazmgg.png' alt='logo' /> */}
       <ul>
         <li>
           <h1 id='home-header' className='hidden'>
@@ -51,7 +51,7 @@ const Home = () => {
           </h1>
         </li>
       </ul>
-      <img className='hidden-right' id='pic' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682627268/Subject_3_asrqj0.png'/>
+      {/* <img className='hidden-right' id='pic' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682627268/Subject_3_asrqj0.png'/> */}
     </div>
     <div id='home-spans'>
         <span id='about-span' className='hidden-right' onClick={() => scrollToSection("about")}>
@@ -69,7 +69,7 @@ const Home = () => {
     </div>
     <div className='about' >
       <div id='about'>
-        <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682628184/Group_5_1_eq3qr6.png' alt='logo' />
+        {/* <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1684964234/LogotWR_oazmgg.png' alt='logo' /> */}
         <div className='hidden'>
           <h1>About Me</h1>
           <p className='about-p'>Hello and welcome to my About page! I'm a brand-new developer who's just starting out on this exciting journey. I'm constantly pushing myself to grow and expand my knowledge, whether it's through online courses, coding challenges, or collaborating with other developers and I just finished my coding bootcamp with La Fosse. I'm excited to be a part of this vibrant community and can't wait to see where this journey takes me!</p>
@@ -84,7 +84,7 @@ const Home = () => {
     <div className='tech' id='tech'>
       <h1 className='hidden'>Technologies I use</h1>
       <div id='row-1'>
-        <div id='languages' className='hidden'>
+        <div id='languages'>
           <h3>Languages</h3>
           <div className='container'>
             <div className='child-div'>
@@ -97,7 +97,7 @@ const Home = () => {
             </div>
           </div>     
         </div>
-        <div id='front-end' className='hidden'>
+        <div id='front-end'>
           <h3>Front End</h3>
           <div className='container'>
             <div className='child-div'>
@@ -122,7 +122,7 @@ const Home = () => {
             </div>
           </div>      
         </div>
-        <div id='back-end' className='hidden-right'>
+        <div id='back-end'>
           <h3>Back end</h3>
           <div className='container'>
             <div className='child-div'>
@@ -143,7 +143,7 @@ const Home = () => {
             </div>
           </div>    
         </div>
-        <div id='virtualization' className='hidden'>
+        <div id='virtualization'>
           <h3>Virtualization</h3>
           <div className='container'>
             <div className='child-div'>
@@ -152,7 +152,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div id='databases' className='hidden'>
+        <div id='databases'>
           <h3>Databases</h3>
           <div className='container'>
             <div className='child-div'>
@@ -169,7 +169,7 @@ const Home = () => {
             </div>     
           </div>    
         </div>
-        <div id='version' className='hidden-right'>
+        <div id='version'>
           <h3>Version Control</h3>
           <div className='container'>
             <div className='child-div'>
@@ -182,7 +182,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div id='testing' className='hidden-right'>
+        <div id='testing'>
           <h3>Testing</h3>
           <div className='container'>
             <div className='child-div'>
@@ -235,7 +235,7 @@ const Home = () => {
         </div>
       </div>
     <div className='contact' id='contact'>
-      <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682628184/Group_5_1_eq3qr6.png' alt='logo' />
+      {/* <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1684964234/LogotWR_oazmgg.png' alt='logo' /> */}
       <ul>
         <li className='hidden-right' id='linkedin'>
           <a href="https://www.linkedin.com/in/kyrylo-rybalko-03a62b178/" target="_blank">My LinkedIn<img id='linkedin-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682354432/Group_6_1_fitciw.png'/></a>
@@ -248,7 +248,7 @@ const Home = () => {
           <a href="https://github.com/kay-dev-uk" target="_blank">My GitHub<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682369316/Group_8_akx0an.png'/></a>
         </li>
         <li className='hidden' id='cv'>
-          <a href="https://github.com/kay-dev-uk/Portfolio/blob/main/src/assets/cv.pdf" target="_blank">My CV<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682865015/Group_10_cemcdl.png'/></a>
+          <a href="src/assets/cv.pdf" target="_blank">My CV<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682865015/Group_10_cemcdl.png'/></a>
         </li>
       </ul>
       <span className='hidden-right' id='contact-to-home' onClick={() => scrollToSection('home')}>

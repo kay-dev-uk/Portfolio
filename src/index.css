@@ -1,14 +1,15 @@
 body {
-  color: #ffe897;
+  color: #2B2D42;
   /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Righteous', bold;
+  /* font-family: 'Righteous', bold; */
+  font-family: 'Sawarabi Mincho', serif;
   margin: 0;
   min-width: 400px;
 }
 
 .home,
 .contact {
-  background-color: #000000;
+  background-color: #EDF2F4;
 }
 
 #logo {
@@ -24,7 +25,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   margin-left: 2px;
-  border: #ffe897 solid 1px;
+  border: #2B2D42 solid 1px;
   border-radius: 5px;
   margin-bottom: 4px;
 }
@@ -43,26 +44,26 @@ body {
 
 .about {
   /* background: linear-gradient(to top, #ffe897, black) bottom; */
-  background-color: #000000;
-  color: #ffe897;
-  border: 1em solid #ffe897;
+  background-color: #EDF2F4;
+  color: #2B2D42;
+  /* border: 1em solid #ffe897; */
 }
 
 .projects {
   /* background: linear-gradient(to bottom, #ffe897, black) top; */
-  background-color: #000000;
+  background-color: #EDF2F4;
 }
 
 .projects .button-container a button {
-  color: #ffe897;
+  color: #2B2D42;
 }
 
 .projects .button-container a button:hover{
-  color: black;
+  color: red;
   cursor: pointer;
-  background: linear-gradient(to left,#ffe897 50%, #a34bfd 50% ) right;
+  /* background: linear-gradient(to left,#ffe897 50%, #a34bfd 50% ) right; */
   background-size: 200%;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .contact,
@@ -131,7 +132,7 @@ body {
   min-height: 100vh;
   max-height: 100vh;
   position: relative;
-  background-color: #ffe897;
+  background-color: #EDF2F4;
 }
 
 #row-1, #row-2 {
@@ -203,7 +204,7 @@ body {
 }
 
 .contact ul li a {
-  color: #fffffe;
+  color: #2B2D42;
 }
 
 
@@ -253,14 +254,12 @@ body {
 }
 
 .home ul {
-  width: 60%;
-  margin-right: 5vw;
+  width: 70%;
 }
 
 .contact li {
   display: grid;
   text-align: center;
-  width: 30em;
   margin: 0 auto;
   list-style: none;
 }
@@ -271,16 +270,16 @@ body {
   padding-bottom: 2em;
   padding-top: 2em;
   font-size: larger;
-  transition: color 0.5s;
+  transition: color 0.2s;
 }
 
 .contact a:hover {
-  color: black;
+  color: red;
   cursor: pointer;
   /* outline: 1px solid #ffe897; */
   outline-offset: 2px;
   /* border-radius: 5px; */
-  background: linear-gradient(to left,#ffe897 50%, #a34bfd 50% ) right;
+  /* background: linear-gradient(to left,#ffe897 50%, #a34bfd 50% ) right; */
   background-size: 200%;
   transition: 1s ease-in-out;
 }
@@ -313,7 +312,7 @@ body {
 span:hover {
   animation: bounce 1.5s infinite !important;
   cursor: pointer;
-  color: #a34bfd;
+  color: #D90429;
   outline-offset: 2px;
   animation-fill-mode: forwards;
   transition: color 0.2s ease-in-out; 
@@ -329,8 +328,8 @@ p {
 .about-p {
   font-size:x-large;
   text-align: justify;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 #pic {
