@@ -1,44 +1,45 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { FaHome } from 'react-icons/fa';
+import Footer from '../../components/Footer';
 
 const Home = () => {
+  useEffect(() => {
+    const observer1 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const observer2 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const hiddenElements1 = document.querySelectorAll('.hidden');
+    hiddenElements1.forEach((el) => observer1.observe(el));
+
+    const hiddenElements2 = document.querySelectorAll('.hidden-right');
+    hiddenElements2.forEach((el) => observer2.observe(el));
+
+    return () => {
+      observer1.disconnect();
+      observer2.disconnect();
+    };
+  }, []); // Empty dependency array to ensure the effect runs only once
+
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   };
 
-    useEffect(() => {
-      const observer1 = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-          } else {
-            entry.target.classList.remove('show');
-          }
-        });
-      });
-    
-      const observer2 = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-          } else {
-            entry.target.classList.remove('show');
-          }
-        });
-      });
-    
-      const hiddenElements1 = document.querySelectorAll('.hidden');
-      hiddenElements1.forEach((el) => observer1.observe(el));
-    
-      const hiddenElements2 = document.querySelectorAll('.hidden-right');
-      hiddenElements2.forEach((el) => observer2.observe(el));
-    
-      return () => {
-        observer1.disconnect();
-        observer2.disconnect();
-      };
-    }, []);
-    
   return (
   <> 
     <div className='home' id='home'>
@@ -238,23 +239,27 @@ const Home = () => {
       {/* <img className='hidden' id='logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1684964234/LogotWR_oazmgg.png' alt='logo' /> */}
       <ul>
         <li className='hidden-right' id='linkedin'>
-          <a href="https://www.linkedin.com/in/kyrylo-rybalko-03a62b178/" target="_blank">My LinkedIn<img id='linkedin-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682354432/Group_6_1_fitciw.png'/></a>
-          
+          <a href="https://www.linkedin.com/in/kyrylo-rybalko-03a62b178/" target="_blank">My LinkedIn</a>
+          {/* <img id='linkedin-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682354432/Group_6_1_fitciw.png'/> */}
         </li>
         <li className='hidden' id='profile'>
-          <a href="https://cohorts.getfutureproof.co.uk/lamarr/kyrylorybalko" target="_blank"><img src=''/>LaFosse Profile<img id='lafosse-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682369134/Group_7_1_ngclan.png' /></a>
+          <a href="https://cohorts.getfutureproof.co.uk/lamarr/kyrylorybalko" target="_blank"><img src=''/>LaFosse Profile</a>
+          {/* <img id='lafosse-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682369134/Group_7_1_ngclan.png' /> */}
         </li>
         <li className='hidden-right' id='github'>
-          <a href="https://github.com/kay-dev-uk" target="_blank">My GitHub<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682369316/Group_8_akx0an.png'/></a>
+          <a href="https://github.com/kay-dev-uk" target="_blank">My GitHub</a>
+          {/* <img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682369316/Group_8_akx0an.png'/> */}
         </li>
         <li className='hidden' id='cv'>
-          <a href="src/assets/cv.pdf" target="_blank">My CV<img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682865015/Group_10_cemcdl.png'/></a>
+          <a href="src/assets/cv.pdf" target="_blank">My CV</a>
+          {/* <img id='github-logo' src='https://res.cloudinary.com/dlxcjxezc/image/upload/v1682865015/Group_10_cemcdl.png'/> */}
         </li>
       </ul>
       <span className='hidden-right' id='contact-to-home' onClick={() => scrollToSection('home')}>
         <FaHome /> Back to Top
       </span>
     </div>
+    <Footer />
   </>
   )
 }
